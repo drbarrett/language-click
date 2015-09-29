@@ -34,7 +34,7 @@
   }
   {
     'match': '->'
-    'name': 'storage.type.click'
+    'name': 'keyword.operator.click'
   }
   {
     'begin': '"'
@@ -56,17 +56,13 @@
   {
     'match': '(::)?\\s*(\\w+)\\s*\\('
     'captures':
-      '1':
-        'name': 'keyword.operator.click'
       '2':
         'name': 'entity.name.type.instance.click'
   }
   {
-    'match': '(::)\\s*(\\w+)'
+    'match': '::\\s*(\\w+)'
     'captures':
       '1':
-        'name': 'keyword.operator.click'
-      '2':
         'name': 'entity.name.type.instance.click'
   }
   {
