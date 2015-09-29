@@ -27,10 +27,10 @@
   {
     'match': '\\b(elementclass)\\b\\s*([_A-Za-z][_A-Za-z0-9]*\\b)'
     'captures':
-      '0':
-        'name': 'entity.name.type.class.click'
       '1':
-        'name': 'storage.type.click'
+        'name': 'storage.type.class.click'
+      '2':
+        'name': 'entity.name.type.class.click'
   }
   {
     'match': '->'
@@ -54,14 +54,20 @@
     'name': 'comment.click'
   }
   {
-    'match': '((::)?\\s*\\w+)\\s*\\('
+    'match': '(::)?\\s*(\\w+)\\s*\\('
     'captures':
       '1':
+        'name': 'keyword.operator.click'
+      '2':
         'name': 'entity.name.type.instance.click'
   }
   {
-    'match': '::\\s*\\w+'
-    'name': 'entity.name.type.instance.click'
+    'match': '(::)\\s*(\\w+)'
+    'captures':
+      '1':
+        'name': 'keyword.operator.click'
+      '2':
+        'name': 'entity.name.type.instance.click'
   }
   {
     'match': '\\b([A-Z]+)\\b'
