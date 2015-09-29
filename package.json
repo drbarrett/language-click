@@ -1,11 +1,11 @@
 {
   "name": "language-click",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Click Modular Router syntax highlighting in Atom",
   "keywords": [
-      "syntax",
-      "highlighting",
-      "Click Modular Router"
+    "syntax",
+    "highlighting",
+    "Click Modular Router"
   ],
   "repository": "https://github.com/stenverbois/language-click",
   "license": "MIT",
