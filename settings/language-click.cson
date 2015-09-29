@@ -1,0 +1,4 @@
+'.source.click':
+  'editor':
+    'commentStart': '// '
+    'foldEndPattern': '^\\s*\\}'
