@@ -17,7 +17,7 @@
     'name': 'constant.other.eth.click'
   }
   {
-    'match': '\\b[\\+-]?\\d+((\\.|\/)\\d+)?'
+    'match': '\\b[\\+-]?\\d+((\\.|\/|x)\\d+)?'
     'name': 'constant.numeric.click'
   }
   {
