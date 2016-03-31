@@ -17,7 +17,23 @@
     'name': 'constant.other.eth.click'
   }
   {
-    'match': '\\b[\\+-]?\\d+((\\.|\/|x)\\d+)?'
+    # hack to fix hex constants in classifier lines (20/0d35)
+    # click allows hex digits in classifier lines without requiring a leading 0x
+    # a simple rule to catch this also catches words like Add
+    # This rule correctly highlights X/Y pairs
+    'match': '\\b([0-9a-fA-F]+)/([0-9a-fA-F]+)\\b'
+    'captures':
+      '1':
+        'name': 'constant.numeric.click'
+      '2':
+        'name': 'constant.numeric.click'
+  }
+  {
+    'match': '\\b[\\+-]?\\d+(\\.?\\d+)?\\b'
+    'name': 'constant.numeric.click'
+  }
+  {
+    'match': '\\b0x[0-9a-fA-F]+\\b'
     'name': 'constant.numeric.click'
   }
   {
