@@ -47,8 +47,8 @@
     'name': 'string.quoted.double.click'
   }
   {
-    'match': '(\\$)(\\w+\\b)'
-    'name': 'variable.parameter.function.click'
+    'match': '[\\b]*\\$[_]*[a-zA-Z][_a-zA-Z0-9]*\\b'
+    'name': 'variable.language.click'
   }
   {
     'match': '\\/\\/.*'
@@ -65,10 +65,6 @@
     'captures':
       '1':
         'name': 'entity.name.type.instance.click'
-  }
-  {
-    'match': '\\b([A-Z]+)\\b'
-    'name': 'variable.language.click'
   }
   {
     'match': ',\\s*(-)'
