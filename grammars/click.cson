@@ -37,7 +37,7 @@
     'name': 'constant.numeric.click'
   }
   {
-    'match': '\\b(connectiontunnel|define|input|library|output|\
+    'match': '\\b(define|input|library|output|\
       read|require|write)\\b'
     'name': 'keyword.other.click'
   }
